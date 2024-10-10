@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goals</title>
+</head>
+<body>
+    
+    <nav class="navBar">
+        <ul>
+            <a href="Index.html"><li>Home</li></a>
+            <a href="background.html" ><li>Background</li></a>
+            <a href="goals.html" style="background-color: gold;"><li>Goals</li></a>
+            <a href="shows.html"><li>Showcases</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+
+        </ul>
+    </nav>
+    
+    <section>
+        <div class="heading">
+            <h1>My Goals as a Fashion Designer</h1>
+            <div class="goals-container">
+                <div class="goals">
+                    <h2>Short Term Goals <i>1-5 years</i></h2>
+                    <p>
+                        - To style campaign shoots, music videos, ads, and movies<br>
+                        - To produce more prints and sell to brands<br>
+                        - To compete overseas<br>
+                        - To represent my country<br>
+                        - To be signed by a styling agent
+                    </p>
+                </div>
+                <div class="goals">
+                    <h2>Long Term Goals <i>5-10 years</i></h2>
+                    <p>
+                        - To be a fashion powerhouse<br>
+                        - To take part in Paris Fashion Week<br>
+                        - To sell across the world<br>
+                        - To have my work in museums<br>
+                        - To represent my continent (Africa)<br>
+                        - To build a fashion school
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<footer>
+    <div class="footer-container">
+       
+        <div class="footer-center">
+            <p>&copy; 2024 UPG pty ltd. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+            <h3>Developer Info</h3>
+            <p>Developed by: GLJ Zwane</p>
+            <p>Email: <a href="mailto:juniorzwane19@gmail.com">juniorzwane19@gmail.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<style>
+
+    
+    /* Base styles for the section */
+    section {
+        padding: 50px;
+        background-color: #f4f4f4; /* Light background */
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 10px;       /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        max-width: 800px;          /* Limit the width for better readability */
+        margin: 20px auto;         /* Center the section on the page */
+    }
+    
+    /* Heading styles */
+    .heading h1 {
+        font-size: 36px;
+        color: #333;               /* Dark text */
+        text-align: center;        /* Center the heading */
+        margin-bottom: 20px;
+        text-transform: uppercase; /* Optional: make the text uppercase */
+    }
+    
+    /* Paragraph styles */
+    .heading p {
+        font-size: 18px;
+        line-height: 1.6;          /* Improve readability with line-height */
+        color: #555;               /* Slightly lighter text color */
+        text-align: justify;       /* Justify the text for neatness */
+    }
+    
+    /* Highlighting important text */
+    .heading strong {
+        color: #d35400;            /* Different color to highlight important text */
+    }
+    
+    /* Add some extra styling for smaller screens */
+    @media (max-width: 768px) {
+        section {
+            padding: 30px;
+        }
+    
+        .heading h1 {
+            font-size: 28px;
+        }
+    
+        .heading p {
+            font-size: 16px;
+        }
+    }
+    
+    /* Flexbox container for the goals */
+.goals-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;                 /* Gap between the two columns */
+}
+
+/* Individual goal sections */
+.goals-container .goals {
+    flex: 1;
+    background-color: #fff;    /* White background for each column */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Styles for the h2 headings */
+.goals h2 {
+    font-size: 24px;
+    color: #d35400;            /* Orange color for goal headings */
+    margin-bottom: 10px;
+    text-align: center;        /* Center each subheading */
+}
+
+/* Paragraph styling */
+.goals p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;               /* Slightly lighter text color */
+    text-align: left;          /* Align text to the left */
+}
+
+/* Italics for goal duration */
+.goals h2 i {
+    font-size: 14px;
+    color: #999;               /* Lighter color for the duration */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .goals-container {
+        flex-direction: column; /* Stack goals vertically on smaller screens */
+    }
+
+    .goals h2 {
+        font-size: 20px;
+    }
+
+    .goals p {
+        font-size: 16px;
+    }
+}
+
+
+    
+    /* Styling the navigation bar */
+    .navBar {
+        background-color: #060000;  /* Dark background */
+        padding: 1px 0;         /* Add some padding */
+    }
+    
+    /* Remove default list styling */
+    .navBar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;           /* Align items horizontally */
+        justify-content: center; /* Center the navigation items */
+    }
+    
+    /* Style for each navigation item */
+    .navBar ul li {
+        padding: 10px 20px;      /* Add space around each item */
+        font-family:fantasy;
+        font-size: 18px;
+        color: white;            /* Text color */
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Smooth hover transition */
+    }
+    
+    /* Remove default link styling */
+    .navBar ul a {
+        text-decoration: none;
+    }
+    
+    /* Hover effect for nav items */
+    .navBar ul li:hover {
+        background-color: gold;  /* Slightly lighter background on hover */
+    }
+    
+    /* Add active state style if needed */
+    .navBar ul li.active {
+        background-color: #222;  /* Highlight active page */
+    }
+        h1{
+           
+            font-family: Arial, Helvetica, sans-serif;
+            animation: fadeIn 2s ease-in-out;
+        }
+    
+    /* Responsive styles for smaller screens */
+    @media (max-width: 768px) {
+        /* Stack the nav items vertically */
+        .navBar ul {
+            flex-direction: column;  /* Stack vertically */
+            align-items: center;     /* Center items */
+        }
+        
+        /* Add some extra padding for better spacing */
+        .navBar ul li {
+            padding: 15px;
+            font-size: 20px;         /* Increase font size for better readability */
+        }
+    }
+    
+    /* Add active state style if needed */
+    .navBar ul li.active {
+        background-color: #222;  /* Highlight active page */
+    }
+    
+    /* Define the keyframes for the animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    /* Base footer styles */
+    footer {
+        background-color: #010c17;
+        color: #ecf0f1;
+        padding: 0px 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    /* Footer container styles */
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    
+    /* Left section (NCAA info) */
+    .footer-left h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-links {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-links a {
+        color: #ecf0f1;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+        color: #1abc9c;
+    }
+    
+    /* Center section (copyright) */
+    .footer-center p {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    /* Right section (Developer info) */
+    .footer-right h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-right p {
+        margin: 4px 0;
+        font-size: 16px;
+    }
+    
+    .footer-right a {
+        color: #1abc9c;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .footer-right a:hover {
+        color: #16a085;
+    }
+    
+    /* Responsive footer styles */
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .footer-left, .footer-right {
+            margin-bottom: 20px;
+        }
+    }
+    
+    
+    </style>
+    
+
+</html>
