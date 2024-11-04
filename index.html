@@ -506,70 +506,62 @@ section {
 
 
 
-/* Styling the navigation bar */
 .navBar {
-    background-color: #060000;  /* Dark background */
-    padding: 1px 0;         /* Add some padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
 }
 
-/* Remove default list styling */
 .navBar ul {
-    list-style: none;
-    margin: 0;
+    display: flex;
+    list-style-type: none;
     padding: 0;
-    display: flex;           /* Align items horizontally */
-    justify-content: center; /* Center the navigation items */
+    margin: 0;
 }
 
-/* Style for each navigation item */
-.navBar ul li {
-    padding: 10px 20px;      /* Add space around each item */
-    font-family:fantasy;
-    font-size: 18px;
-    color: white;            /* Text color */
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
+.navBar li {
+    margin: 0 15px;
 }
 
-/* Remove default link styling */
-.navBar ul a {
+.navBar a {
+    color: white;
     text-decoration: none;
 }
 
-/* Hover effect for nav items */
-.navBar ul li:hover {
-    background-color: gold;  /* Slightly lighter background on hover */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
 }
 
-/* Add active state style if needed */
-.navBar ul li.active {
-    background-color: #222;  /* Highlight active page */
+.menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
 }
-    h1{
-       
-        font-family: Arial, Helvetica, sans-serif;
-        animation: fadeIn 2s ease-in-out;
-    }
 
-/* Responsive styles for smaller screens */
 @media (max-width: 768px) {
-    /* Stack the nav items vertically */
     .navBar ul {
-        flex-direction: column;  /* Stack vertically */
-        align-items: center;     /* Center items */
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
     }
-    
-    /* Add some extra padding for better spacing */
-    .navBar ul li {
-        padding: 15px;
-        font-size: 20px;         /* Increase font size for better readability */
+    .navBar ul.active {
+        display: flex;
+    }
+    .menu-toggle {
+        display: flex;
     }
 }
 
-/* Add active state style if needed */
-.navBar ul li.active {
-    background-color: #222;  /* Highlight active page */
-}
 
 /* Define the keyframes for the animation */
 @keyframes fadeIn {
